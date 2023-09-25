@@ -22,4 +22,26 @@ class PDFReportGenerator: ReportGeneratorProtocol{
             """
         return report
     }
+    
+    func generateReports(manager: Manager, reportGenerator: ReportGeneratorProtocol) {
+        print("")
+        print("Generating Reports:")
+        
+        let allWorks = manager.getAllWorks()
+        
+        for workItem in allWorks {
+            if let task = workItem as? Task {
+                let taskReport = reportGenerator.generateTaskReport(task: task)
+                print("Task Report:")
+                print(taskReport)
+                print("")
+            }
+            else if let labWork = workItem as? LabWork {
+                let labWorkReport = reportGenerator.generateLabWorkReport(labWork: labWork)
+                print("Lab Work Report:")
+                print(labWorkReport)
+            }
+        }
+        print(" ")
+    }
 }

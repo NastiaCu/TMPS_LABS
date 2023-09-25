@@ -3,6 +3,11 @@ import Foundation
 class Manager: ManagerProtocol{
     
     private var items: [WorkItemProtocol] = []
+    private let userInputManager: UserInputManager
+
+    init(userInputManager: UserInputManager) {
+        self.userInputManager = userInputManager
+    }
     
     func addWork(workItem: WorkItemProtocol) {
         items.append(workItem)

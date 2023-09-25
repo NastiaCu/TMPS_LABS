@@ -1,17 +1,12 @@
 import Foundation
 
-class LabWork: LabWorkProtocol {
-    var labWorkID: Int
-    var name: String
-    var description: String
+class LabWork: WorkItem, LabWorkProtocol {
     var startDate: String
     var endDate: String
 
-    init(labWorkID: Int, name: String, description: String, startDate: String, endDate: String) {
-        self.labWorkID = labWorkID
-        self.name = name
-        self.description = description
+    init(ID: Int, title: String, description: String, startDate: String, endDate: String) {
         self.startDate = startDate
         self.endDate = endDate
+        super.init(ID: ID, title: title, description: description)
     }
 }

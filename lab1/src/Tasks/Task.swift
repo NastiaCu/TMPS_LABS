@@ -1,15 +1,10 @@
 import Foundation
 
-class Task: TaskProtocol {
-    var taskID: Int
-    var title: String
-    var description: String
+class Task: WorkItem, TaskProtocol {
     var priority: TaskPriority
 
-    init(taskID: Int, title: String, description: String, priority: TaskPriority) {
-        self.taskID = taskID
-        self.title = title
-        self.description = description
+    init(ID: Int, title: String, description: String, priority: TaskPriority) {
         self.priority = priority
+        super.init(ID: ID, title: title, description: description)
     }
 }

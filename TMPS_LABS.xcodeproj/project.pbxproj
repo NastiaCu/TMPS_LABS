@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		134F3AE42AC0CC5200B459C6 /* LabWorkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE02AC0CC5200B459C6 /* LabWorkManagerProtocol.swift */; };
+		13187CC92AC1914A0022C2E2 /* WorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13187CC82AC1914A0022C2E2 /* WorkItem.swift */; };
+		13187CCB2AC191BC0022C2E2 /* WorkItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13187CCA2AC191BC0022C2E2 /* WorkItemProtocol.swift */; };
+		134F3AE42AC0CC5200B459C6 /* ManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE02AC0CC5200B459C6 /* ManagerProtocol.swift */; };
 		134F3AE52AC0CC5200B459C6 /* LabWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE12AC0CC5200B459C6 /* LabWork.swift */; };
 		134F3AE62AC0CC5200B459C6 /* LabWorkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE22AC0CC5200B459C6 /* LabWorkProtocol.swift */; };
-		134F3AE72AC0CC5200B459C6 /* LabWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE32AC0CC5200B459C6 /* LabWorkManager.swift */; };
-		134F3AED2AC0CC5C00B459C6 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE82AC0CC5C00B459C6 /* TaskManager.swift */; };
+		134F3AE72AC0CC5200B459C6 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE32AC0CC5200B459C6 /* Manager.swift */; };
 		134F3AEE2AC0CC5C00B459C6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE92AC0CC5C00B459C6 /* Task.swift */; };
 		134F3AEF2AC0CC5C00B459C6 /* TaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AEA2AC0CC5C00B459C6 /* TaskProtocol.swift */; };
-		134F3AF02AC0CC5C00B459C6 /* TaskManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AEB2AC0CC5C00B459C6 /* TaskManagerProtocol.swift */; };
 		134F3AF12AC0CC5C00B459C6 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AEC2AC0CC5C00B459C6 /* TaskPriority.swift */; };
 		134F3AF42AC0CC6700B459C6 /* ReportGeneratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AF22AC0CC6700B459C6 /* ReportGeneratorProtocol.swift */; };
 		134F3AF52AC0CC6700B459C6 /* PDFReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AF32AC0CC6700B459C6 /* PDFReportGenerator.swift */; };
@@ -34,15 +34,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13187CC82AC1914A0022C2E2 /* WorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItem.swift; sourceTree = "<group>"; };
+		13187CCA2AC191BC0022C2E2 /* WorkItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemProtocol.swift; sourceTree = "<group>"; };
 		134F3AD12AC0CBB000B459C6 /* TMPS_LABS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TMPS_LABS; sourceTree = BUILT_PRODUCTS_DIR; };
-		134F3AE02AC0CC5200B459C6 /* LabWorkManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabWorkManagerProtocol.swift; sourceTree = "<group>"; };
+		134F3AE02AC0CC5200B459C6 /* ManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerProtocol.swift; sourceTree = "<group>"; };
 		134F3AE12AC0CC5200B459C6 /* LabWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabWork.swift; sourceTree = "<group>"; };
 		134F3AE22AC0CC5200B459C6 /* LabWorkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabWorkProtocol.swift; sourceTree = "<group>"; };
-		134F3AE32AC0CC5200B459C6 /* LabWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabWorkManager.swift; sourceTree = "<group>"; };
-		134F3AE82AC0CC5C00B459C6 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		134F3AE32AC0CC5200B459C6 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		134F3AE92AC0CC5C00B459C6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		134F3AEA2AC0CC5C00B459C6 /* TaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskProtocol.swift; sourceTree = "<group>"; };
-		134F3AEB2AC0CC5C00B459C6 /* TaskManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManagerProtocol.swift; sourceTree = "<group>"; };
 		134F3AEC2AC0CC5C00B459C6 /* TaskPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
 		134F3AF22AC0CC6700B459C6 /* ReportGeneratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportGeneratorProtocol.swift; sourceTree = "<group>"; };
 		134F3AF32AC0CC6700B459C6 /* PDFReportGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFReportGenerator.swift; sourceTree = "<group>"; };
@@ -60,10 +60,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13187CC72AC191270022C2E2 /* WorkItem */ = {
+			isa = PBXGroup;
+			children = (
+				13187CC82AC1914A0022C2E2 /* WorkItem.swift */,
+				13187CCA2AC191BC0022C2E2 /* WorkItemProtocol.swift */,
+			);
+			path = WorkItem;
+			sourceTree = "<group>";
+		};
+		13187CCC2AC195D40022C2E2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				134F3AE32AC0CC5200B459C6 /* Manager.swift */,
+				134F3AE02AC0CC5200B459C6 /* ManagerProtocol.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		134F3AC82AC0CBB000B459C6 = {
 			isa = PBXGroup;
 			children = (
-				134F3AD32AC0CBB000B459C6 /* TMPS_LABS */,
+				134F3AD32AC0CBB000B459C6 /* lab1 */,
 				134F3AD22AC0CBB000B459C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,18 +94,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		134F3AD32AC0CBB000B459C6 /* TMPS_LABS */ = {
+		134F3AD32AC0CBB000B459C6 /* lab1 */ = {
 			isa = PBXGroup;
 			children = (
 				134F3ADB2AC0CBBF00B459C6 /* src */,
 			);
-			path = TMPS_LABS;
+			path = lab1;
 			sourceTree = "<group>";
 		};
 		134F3ADB2AC0CBBF00B459C6 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				134F3AF62AC0CC7200B459C6 /* main.swift */,
+				13187CCC2AC195D40022C2E2 /* Manager */,
+				13187CC72AC191270022C2E2 /* WorkItem */,
 				134F3ADF2AC0CC3B00B459C6 /* LabWorks */,
 				134F3ADD2AC0CC0400B459C6 /* Tasks */,
 				134F3ADC2AC0CBF100B459C6 /* ReportsGenerator */,
@@ -108,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				134F3AE92AC0CC5C00B459C6 /* Task.swift */,
-				134F3AE82AC0CC5C00B459C6 /* TaskManager.swift */,
-				134F3AEB2AC0CC5C00B459C6 /* TaskManagerProtocol.swift */,
 				134F3AEC2AC0CC5C00B459C6 /* TaskPriority.swift */,
 				134F3AEA2AC0CC5C00B459C6 /* TaskProtocol.swift */,
 			);
@@ -120,8 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				134F3AE12AC0CC5200B459C6 /* LabWork.swift */,
-				134F3AE32AC0CC5200B459C6 /* LabWorkManager.swift */,
-				134F3AE02AC0CC5200B459C6 /* LabWorkManagerProtocol.swift */,
 				134F3AE22AC0CC5200B459C6 /* LabWorkProtocol.swift */,
 			);
 			path = LabWorks;
@@ -186,18 +202,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				134F3AE72AC0CC5200B459C6 /* LabWorkManager.swift in Sources */,
+				134F3AE72AC0CC5200B459C6 /* Manager.swift in Sources */,
 				134F3AF12AC0CC5C00B459C6 /* TaskPriority.swift in Sources */,
 				134F3AF72AC0CC7200B459C6 /* main.swift in Sources */,
+				13187CC92AC1914A0022C2E2 /* WorkItem.swift in Sources */,
 				134F3AE52AC0CC5200B459C6 /* LabWork.swift in Sources */,
 				134F3AF42AC0CC6700B459C6 /* ReportGeneratorProtocol.swift in Sources */,
 				134F3AF52AC0CC6700B459C6 /* PDFReportGenerator.swift in Sources */,
-				134F3AED2AC0CC5C00B459C6 /* TaskManager.swift in Sources */,
-				134F3AE42AC0CC5200B459C6 /* LabWorkManagerProtocol.swift in Sources */,
-				134F3AF02AC0CC5C00B459C6 /* TaskManagerProtocol.swift in Sources */,
+				134F3AE42AC0CC5200B459C6 /* ManagerProtocol.swift in Sources */,
 				134F3AEE2AC0CC5C00B459C6 /* Task.swift in Sources */,
 				134F3AE62AC0CC5200B459C6 /* LabWorkProtocol.swift in Sources */,
 				134F3AEF2AC0CC5C00B459C6 /* TaskProtocol.swift in Sources */,
+				13187CCB2AC191BC0022C2E2 /* WorkItemProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

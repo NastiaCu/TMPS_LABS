@@ -4,9 +4,10 @@ class Manager: ManagerProtocol{
     
     private var items: [WorkItemProtocol] = []
     private let userInputManager: UserInputManager
+    static let shared = Manager()
 
-    init(userInputManager: UserInputManager) {
-        self.userInputManager = userInputManager
+    init() {
+        userInputManager = UserInputManager(pdfReportGenerator: PDFReportGenerator())
     }
     
     func addWork(workItem: WorkItemProtocol) {

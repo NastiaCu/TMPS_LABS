@@ -4,6 +4,9 @@ class Menu{
     
     private let pdfReportGenerator: ReportGeneratorProtocol
 
+    private let taskFactory = TaskFactory()
+    private let labWorkFactory = LabWorkFactory()
+    
     init(pdfReportGenerator: ReportGeneratorProtocol) {
         self.pdfReportGenerator = pdfReportGenerator
     }
@@ -22,17 +25,9 @@ class Menu{
             if let choice = userInput.getInput() {
                 switch choice {
                 case "1":
-                    if let taskDetails = userInput.getTaskDetails() {
-                        let task = Task(ID: taskDetails.0, title: taskDetails.1, description: taskDetails.2, priority: taskDetails.3)
-                        manager.addWork(workItem: task)
-                        print("Task added.")
-                    }
+                    addTask()
                 case "2":
-                    if let labWorkDetails = userInput.getLabWorkDetails() {
-                        let labWork = LabWork(ID: labWorkDetails.0, title: labWorkDetails.1, description: labWorkDetails.2, startDate: labWorkDetails.3, endDate: labWorkDetails.4)
-                        manager.addWork(workItem: labWork)
-                        print("Lab Work added.")
-                    }
+                    addLabWork()
                 case "3":
                     pdfReportGenerator.generateReports(manager: manager, reportGenerator: pdfReportGenerator)
                 case "4":
@@ -40,6 +35,35 @@ class Menu{
                 default:
                     print("Invalid choice. Please enter a valid option.")
                 }
+            }
+        }
+    }
+    
+    private func addTask() {
+        if let taskDetails = userInput.getTaskDetails() {
+            let taskBuilder = WorkItemBuilder(title: taskDetails.1)
+                .ID(taskDetails.0)
+                .description(taskDetails.2)
+                .priority(taskDetails.3)
+
+            if let task = taskFactory.createTask(builder: taskBuilder) {
+                Manager.shared.addWork(workItem: task)
+                print("Task added.")
+            }
+        }
+    }
+    
+    private func addLabWork() {
+        if let labWorkDetails = userInput.getLabWorkDetails() {
+            let labWorkBuilder = WorkItemBuilder(title: labWorkDetails.1)
+                .ID(labWorkDetails.0)
+                .description(labWorkDetails.2)
+                .startDate(labWorkDetails.3)
+                .endDate(labWorkDetails.4)
+
+            if let labWork = labWorkFactory.createLabWork(builder: labWorkBuilder) {
+                Manager.shared.addWork(workItem: labWork)
+                print("Lab Work added.")
             }
         }
     }

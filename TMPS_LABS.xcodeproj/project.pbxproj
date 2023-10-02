@@ -21,6 +21,9 @@
 		134F3AF42AC0CC6700B459C6 /* ReportGeneratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AF22AC0CC6700B459C6 /* ReportGeneratorProtocol.swift */; };
 		134F3AF52AC0CC6700B459C6 /* PDFReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AF32AC0CC6700B459C6 /* PDFReportGenerator.swift */; };
 		134F3AF72AC0CC7200B459C6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AF62AC0CC7200B459C6 /* main.swift */; };
+		13B948C82ACAB31400885A01 /* ReportGenerationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B948C72ACAB31400885A01 /* ReportGenerationStrategy.swift */; };
+		13B948CA2ACAB32D00885A01 /* TaskReportStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B948C92ACAB32D00885A01 /* TaskReportStrategy.swift */; };
+		13B948CC2ACAB35D00885A01 /* LabWorkReportStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B948CB2ACAB35D00885A01 /* LabWorkReportStrategy.swift */; };
 		13CA022A2AC9B6DD00C2D225 /* LabWorkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA02292AC9B6DD00C2D225 /* LabWorkFactory.swift */; };
 		13CA022C2AC9B70A00C2D225 /* TaskFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA022B2AC9B70A00C2D225 /* TaskFactory.swift */; };
 		13CA02312AC9B79800C2D225 /* WorkItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA02302AC9B79800C2D225 /* WorkItemBuilder.swift */; };
@@ -54,6 +57,9 @@
 		134F3AF22AC0CC6700B459C6 /* ReportGeneratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportGeneratorProtocol.swift; sourceTree = "<group>"; };
 		134F3AF32AC0CC6700B459C6 /* PDFReportGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFReportGenerator.swift; sourceTree = "<group>"; };
 		134F3AF62AC0CC7200B459C6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		13B948C72ACAB31400885A01 /* ReportGenerationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportGenerationStrategy.swift; sourceTree = "<group>"; };
+		13B948C92ACAB32D00885A01 /* TaskReportStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReportStrategy.swift; sourceTree = "<group>"; };
+		13B948CB2ACAB35D00885A01 /* LabWorkReportStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabWorkReportStrategy.swift; sourceTree = "<group>"; };
 		13CA02292AC9B6DD00C2D225 /* LabWorkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabWorkFactory.swift; sourceTree = "<group>"; };
 		13CA022B2AC9B70A00C2D225 /* TaskFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFactory.swift; sourceTree = "<group>"; };
 		13CA02302AC9B79800C2D225 /* WorkItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemBuilder.swift; sourceTree = "<group>"; };
@@ -93,7 +99,7 @@
 		134F3AC82AC0CBB000B459C6 = {
 			isa = PBXGroup;
 			children = (
-				134F3AD32AC0CBB000B459C6 /* lab1 */,
+				134F3AD32AC0CBB000B459C6 /* labs */,
 				134F3AD22AC0CBB000B459C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,17 +112,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		134F3AD32AC0CBB000B459C6 /* lab1 */ = {
+		134F3AD32AC0CBB000B459C6 /* labs */ = {
 			isa = PBXGroup;
 			children = (
 				134F3ADB2AC0CBBF00B459C6 /* src */,
 			);
-			path = lab1;
+			path = labs;
 			sourceTree = "<group>";
 		};
 		134F3ADB2AC0CBBF00B459C6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				13B948C62ACAB2F000885A01 /* Strategy */,
 				13CA022F2AC9B77E00C2D225 /* Builder */,
 				13CA02282AC9B6C000C2D225 /* Factory */,
 				134F3AF62AC0CC7200B459C6 /* main.swift */,
@@ -155,6 +162,16 @@
 				134F3AE22AC0CC5200B459C6 /* LabWorkProtocol.swift */,
 			);
 			path = LabWorks;
+			sourceTree = "<group>";
+		};
+		13B948C62ACAB2F000885A01 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				13B948C72ACAB31400885A01 /* ReportGenerationStrategy.swift */,
+				13B948C92ACAB32D00885A01 /* TaskReportStrategy.swift */,
+				13B948CB2ACAB35D00885A01 /* LabWorkReportStrategy.swift */,
+			);
+			path = Strategy;
 			sourceTree = "<group>";
 		};
 		13CA02282AC9B6C000C2D225 /* Factory */ = {
@@ -235,6 +252,8 @@
 			files = (
 				13CA022A2AC9B6DD00C2D225 /* LabWorkFactory.swift in Sources */,
 				134F3AE72AC0CC5200B459C6 /* Manager.swift in Sources */,
+				13B948C82ACAB31400885A01 /* ReportGenerationStrategy.swift in Sources */,
+				13B948CA2ACAB32D00885A01 /* TaskReportStrategy.swift in Sources */,
 				134F3AF12AC0CC5C00B459C6 /* TaskPriority.swift in Sources */,
 				13187CD22AC1FF180022C2E2 /* Menu.swift in Sources */,
 				134F3AF72AC0CC7200B459C6 /* main.swift in Sources */,
@@ -246,6 +265,7 @@
 				13187CCE2AC1DDDB0022C2E2 /* UserInputManager.swift in Sources */,
 				134F3AF52AC0CC6700B459C6 /* PDFReportGenerator.swift in Sources */,
 				134F3AE42AC0CC5200B459C6 /* ManagerProtocol.swift in Sources */,
+				13B948CC2ACAB35D00885A01 /* LabWorkReportStrategy.swift in Sources */,
 				134F3AEE2AC0CC5C00B459C6 /* Task.swift in Sources */,
 				134F3AE62AC0CC5200B459C6 /* LabWorkProtocol.swift in Sources */,
 				134F3AEF2AC0CC5C00B459C6 /* TaskProtocol.swift in Sources */,

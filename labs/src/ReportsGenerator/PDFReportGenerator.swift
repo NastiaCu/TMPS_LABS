@@ -30,8 +30,8 @@ class PDFReportGenerator: ReportGeneratorProtocol{
                 let labWorkReport = generateLabWorkReport(labWork: labWork)
                 print("Lab Work Report:")
                 print(labWorkReport)
+                print("")
             }
         }
-        print(" ")
     }
 }

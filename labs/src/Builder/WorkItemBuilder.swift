@@ -17,11 +17,6 @@ class WorkItemBuilder {
         return self
     }
 
-//    func title(_ title: String) -> WorkItemBuilder {
-//        self.title = title
-//        return self
-//    }
-
     func description(_ description: String) -> WorkItemBuilder {
         self.description = description
         return self

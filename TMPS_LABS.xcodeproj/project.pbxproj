@@ -11,6 +11,8 @@
 		13187CCB2AC191BC0022C2E2 /* WorkItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13187CCA2AC191BC0022C2E2 /* WorkItemProtocol.swift */; };
 		13187CCE2AC1DDDB0022C2E2 /* UserInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13187CCD2AC1DDDB0022C2E2 /* UserInputManager.swift */; };
 		13187CD22AC1FF180022C2E2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13187CD12AC1FF180022C2E2 /* Menu.swift */; };
+		13192EA72ACB59E100897CC3 /* Cloning .swift in Sources */ = {isa = PBXBuildFile; fileRef = 13192EA62ACB59E100897CC3 /* Cloning .swift */; };
+		13192EA92ACB605B00897CC3 /* MenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13192EA82ACB605B00897CC3 /* MenuProtocol.swift */; };
 		134F3AE42AC0CC5200B459C6 /* ManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE02AC0CC5200B459C6 /* ManagerProtocol.swift */; };
 		134F3AE52AC0CC5200B459C6 /* LabWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE12AC0CC5200B459C6 /* LabWork.swift */; };
 		134F3AE62AC0CC5200B459C6 /* LabWorkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F3AE22AC0CC5200B459C6 /* LabWorkProtocol.swift */; };
@@ -46,6 +48,8 @@
 		13187CCA2AC191BC0022C2E2 /* WorkItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemProtocol.swift; sourceTree = "<group>"; };
 		13187CCD2AC1DDDB0022C2E2 /* UserInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputManager.swift; sourceTree = "<group>"; };
 		13187CD12AC1FF180022C2E2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		13192EA62ACB59E100897CC3 /* Cloning .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloning .swift"; sourceTree = "<group>"; };
+		13192EA82ACB605B00897CC3 /* MenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocol.swift; sourceTree = "<group>"; };
 		134F3AD12AC0CBB000B459C6 /* TMPS_LABS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TMPS_LABS; sourceTree = BUILT_PRODUCTS_DIR; };
 		134F3AE02AC0CC5200B459C6 /* ManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerProtocol.swift; sourceTree = "<group>"; };
 		134F3AE12AC0CC5200B459C6 /* LabWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabWork.swift; sourceTree = "<group>"; };
@@ -92,8 +96,17 @@
 				134F3AE02AC0CC5200B459C6 /* ManagerProtocol.swift */,
 				13187CCD2AC1DDDB0022C2E2 /* UserInputManager.swift */,
 				13187CD12AC1FF180022C2E2 /* Menu.swift */,
+				13192EA82ACB605B00897CC3 /* MenuProtocol.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		13192EA52ACB59CC00897CC3 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				13192EA62ACB59E100897CC3 /* Cloning .swift */,
+			);
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 		134F3AC82AC0CBB000B459C6 = {
@@ -123,6 +136,7 @@
 		134F3ADB2AC0CBBF00B459C6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				13192EA52ACB59CC00897CC3 /* Prototype */,
 				13B948C62ACAB2F000885A01 /* Strategy */,
 				13CA022F2AC9B77E00C2D225 /* Builder */,
 				13CA02282AC9B6C000C2D225 /* Factory */,
@@ -259,12 +273,14 @@
 				134F3AF72AC0CC7200B459C6 /* main.swift in Sources */,
 				13187CC92AC1914A0022C2E2 /* WorkItem.swift in Sources */,
 				134F3AE52AC0CC5200B459C6 /* LabWork.swift in Sources */,
+				13192EA72ACB59E100897CC3 /* Cloning .swift in Sources */,
 				13CA02312AC9B79800C2D225 /* WorkItemBuilder.swift in Sources */,
 				13CA022C2AC9B70A00C2D225 /* TaskFactory.swift in Sources */,
 				134F3AF42AC0CC6700B459C6 /* ReportGeneratorProtocol.swift in Sources */,
 				13187CCE2AC1DDDB0022C2E2 /* UserInputManager.swift in Sources */,
 				134F3AF52AC0CC6700B459C6 /* PDFReportGenerator.swift in Sources */,
 				134F3AE42AC0CC5200B459C6 /* ManagerProtocol.swift in Sources */,
+				13192EA92ACB605B00897CC3 /* MenuProtocol.swift in Sources */,
 				13B948CC2ACAB35D00885A01 /* LabWorkReportStrategy.swift in Sources */,
 				134F3AEE2AC0CC5C00B459C6 /* Task.swift in Sources */,
 				134F3AE62AC0CC5200B459C6 /* LabWorkProtocol.swift in Sources */,

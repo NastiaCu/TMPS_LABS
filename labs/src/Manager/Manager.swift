@@ -6,7 +6,7 @@ class Manager: ManagerProtocol{
     private let userInputManager: UserInputManager
     static let shared = Manager()
 
-    init() {
+    private init() {
         userInputManager = UserInputManager(pdfReportGenerator: PDFReportGenerator())
     }
     

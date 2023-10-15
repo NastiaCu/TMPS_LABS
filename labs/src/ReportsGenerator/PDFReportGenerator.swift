@@ -13,7 +13,7 @@ class PDFReportGenerator: ReportGeneratorProtocol{
         return labWorkReportStrategy.generateReport(workItem: labWork)
     }
     
-    func generateReports(manager: Manager, reportGenerator: ReportGeneratorProtocol) {
+    func generateReports(manager: ManagerProtocol, reportGenerator: ReportGeneratorProtocol) {
         print("")
         print("Generating Reports:")
         

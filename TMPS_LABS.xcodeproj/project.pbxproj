@@ -60,7 +60,7 @@
 		134F3AEC2AC0CC5C00B459C6 /* TaskPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
 		134F3AF22AC0CC6700B459C6 /* ReportGeneratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportGeneratorProtocol.swift; sourceTree = "<group>"; };
 		134F3AF32AC0CC6700B459C6 /* PDFReportGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFReportGenerator.swift; sourceTree = "<group>"; };
-		134F3AF62AC0CC7200B459C6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		134F3AF62AC0CC7200B459C6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../main.swift; sourceTree = "<group>"; };
 		13B948C72ACAB31400885A01 /* ReportGenerationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportGenerationStrategy.swift; sourceTree = "<group>"; };
 		13B948C92ACAB32D00885A01 /* TaskReportStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReportStrategy.swift; sourceTree = "<group>"; };
 		13B948CB2ACAB35D00885A01 /* LabWorkReportStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabWorkReportStrategy.swift; sourceTree = "<group>"; };
@@ -86,7 +86,8 @@
 				13187CC82AC1914A0022C2E2 /* WorkItem.swift */,
 				13187CCA2AC191BC0022C2E2 /* WorkItemProtocol.swift */,
 			);
-			path = WorkItem;
+			name = WorkItem;
+			path = ../WorkItem;
 			sourceTree = "<group>";
 		};
 		13187CCC2AC195D40022C2E2 /* Manager */ = {
@@ -98,7 +99,8 @@
 				13187CD12AC1FF180022C2E2 /* Menu.swift */,
 				13192EA82ACB605B00897CC3 /* MenuProtocol.swift */,
 			);
-			path = Manager;
+			name = Manager;
+			path = ../Manager;
 			sourceTree = "<group>";
 		};
 		13192EA52ACB59CC00897CC3 /* Prototype */ = {
@@ -106,7 +108,32 @@
 			children = (
 				13192EA62ACB59E100897CC3 /* Cloning .swift */,
 			);
-			path = Prototype;
+			name = Prototype;
+			path = ../Prototype;
+			sourceTree = "<group>";
+		};
+		134C4EB52ADC03C500D002A4 /* lab3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lab3;
+			sourceTree = "<group>";
+		};
+		134C4EB62ADC03D000D002A4 /* lab2 */ = {
+			isa = PBXGroup;
+			children = (
+				134F3AF62AC0CC7200B459C6 /* main.swift */,
+				134F3ADC2AC0CBF100B459C6 /* ReportsGenerator */,
+				134F3ADD2AC0CC0400B459C6 /* Tasks */,
+				134F3ADF2AC0CC3B00B459C6 /* LabWorks */,
+				13187CC72AC191270022C2E2 /* WorkItem */,
+				13187CCC2AC195D40022C2E2 /* Manager */,
+				13CA02282AC9B6C000C2D225 /* Factory */,
+				13CA022F2AC9B77E00C2D225 /* Builder */,
+				13B948C62ACAB2F000885A01 /* Strategy */,
+				13192EA52ACB59CC00897CC3 /* Prototype */,
+			);
+			path = lab2;
 			sourceTree = "<group>";
 		};
 		134F3AC82AC0CBB000B459C6 = {
@@ -128,6 +155,7 @@
 		134F3AD32AC0CBB000B459C6 /* labs */ = {
 			isa = PBXGroup;
 			children = (
+				134C4EB52ADC03C500D002A4 /* lab3 */,
 				134F3ADB2AC0CBBF00B459C6 /* src */,
 			);
 			path = labs;
@@ -136,16 +164,7 @@
 		134F3ADB2AC0CBBF00B459C6 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				13192EA52ACB59CC00897CC3 /* Prototype */,
-				13B948C62ACAB2F000885A01 /* Strategy */,
-				13CA022F2AC9B77E00C2D225 /* Builder */,
-				13CA02282AC9B6C000C2D225 /* Factory */,
-				134F3AF62AC0CC7200B459C6 /* main.swift */,
-				13187CCC2AC195D40022C2E2 /* Manager */,
-				13187CC72AC191270022C2E2 /* WorkItem */,
-				134F3ADF2AC0CC3B00B459C6 /* LabWorks */,
-				134F3ADD2AC0CC0400B459C6 /* Tasks */,
-				134F3ADC2AC0CBF100B459C6 /* ReportsGenerator */,
+				134C4EB62ADC03D000D002A4 /* lab2 */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -156,7 +175,8 @@
 				134F3AF32AC0CC6700B459C6 /* PDFReportGenerator.swift */,
 				134F3AF22AC0CC6700B459C6 /* ReportGeneratorProtocol.swift */,
 			);
-			path = ReportsGenerator;
+			name = ReportsGenerator;
+			path = ../ReportsGenerator;
 			sourceTree = "<group>";
 		};
 		134F3ADD2AC0CC0400B459C6 /* Tasks */ = {
@@ -166,7 +186,8 @@
 				134F3AEC2AC0CC5C00B459C6 /* TaskPriority.swift */,
 				134F3AEA2AC0CC5C00B459C6 /* TaskProtocol.swift */,
 			);
-			path = Tasks;
+			name = Tasks;
+			path = ../Tasks;
 			sourceTree = "<group>";
 		};
 		134F3ADF2AC0CC3B00B459C6 /* LabWorks */ = {
@@ -175,7 +196,8 @@
 				134F3AE12AC0CC5200B459C6 /* LabWork.swift */,
 				134F3AE22AC0CC5200B459C6 /* LabWorkProtocol.swift */,
 			);
-			path = LabWorks;
+			name = LabWorks;
+			path = ../LabWorks;
 			sourceTree = "<group>";
 		};
 		13B948C62ACAB2F000885A01 /* Strategy */ = {
@@ -185,7 +207,8 @@
 				13B948C92ACAB32D00885A01 /* TaskReportStrategy.swift */,
 				13B948CB2ACAB35D00885A01 /* LabWorkReportStrategy.swift */,
 			);
-			path = Strategy;
+			name = Strategy;
+			path = ../Strategy;
 			sourceTree = "<group>";
 		};
 		13CA02282AC9B6C000C2D225 /* Factory */ = {
@@ -194,7 +217,8 @@
 				13CA02292AC9B6DD00C2D225 /* LabWorkFactory.swift */,
 				13CA022B2AC9B70A00C2D225 /* TaskFactory.swift */,
 			);
-			path = Factory;
+			name = Factory;
+			path = ../Factory;
 			sourceTree = "<group>";
 		};
 		13CA022F2AC9B77E00C2D225 /* Builder */ = {
@@ -202,7 +226,8 @@
 			children = (
 				13CA02302AC9B79800C2D225 /* WorkItemBuilder.swift */,
 			);
-			path = Builder;
+			name = Builder;
+			path = ../Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

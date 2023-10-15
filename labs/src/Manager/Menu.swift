@@ -11,7 +11,7 @@ class Menu: MenuProtocol{
         self.pdfReportGenerator = pdfReportGenerator
     }
     
-    func mainMenu(manager: Manager, userInput: UserInputManager) {
+    func mainMenu(manager: ManagerProtocol, userInput: UserInputManager) {
         var shouldExit = false
 
         while !shouldExit {
